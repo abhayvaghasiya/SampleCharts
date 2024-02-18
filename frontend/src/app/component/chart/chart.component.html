@@ -1,0 +1,9 @@
+<div class="main-container">
+  <div [ngSwitch]="currentSelection">
+    <div class="graph-container" *ngSwitchCase="1"><app-pie-charts [data]="data"></app-pie-charts></div>
+    <div class="graph-container" *ngSwitchCase="2"><app-column-bar-graph [data]="data"></app-column-bar-graph></div>
+    <div class="graph-container" *ngSwitchCase="3"><app-line-charts [data]="multiData"></app-line-charts></div>
+    <div class="graph-container" *ngSwitchCase="4"><app-bar-graph [data]="data"></app-bar-graph></div>
+    <div class="graph-container" *ngSwitchDefault><app-pie-charts [data]="data"></app-pie-charts></div>
+  </div>
+</div>

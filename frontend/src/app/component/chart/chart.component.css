@@ -1,0 +1,12 @@
+.main-container{
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding:80px;
+}
+
+.graph-container{
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+}

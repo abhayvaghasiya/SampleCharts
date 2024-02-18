@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-title>Sample Charts</mat-card-title>
+  <mat-card-actions>
+    <mat-chip-listbox aria-label="Chart Selection">
+      <mat-chip-option (click)="updateSelection(1)" selected=true>Pie</mat-chip-option>
+      <mat-chip-option (click)="updateSelection(2)">Column</mat-chip-option>
+      <mat-chip-option (click)="updateSelection(3)">Line</mat-chip-option>
+      <mat-chip-option (click)="updateSelection(4)">Stack Bar</mat-chip-option>
+    </mat-chip-listbox>
+  </mat-card-actions>
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+  <br>
+  <br>
+  <br>
+  <mat-card-content><app-chart [currentSelection]="currentSelection"></app-chart></mat-card-content>
+</mat-card>
+
+
+
+
