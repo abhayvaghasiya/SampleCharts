@@ -7,7 +7,7 @@ import {interval, Observable, switchMap} from "rxjs";
 })
 export class DataService {
 
-  private apiUrl = 'http://localhost:3000/api/data';
+  private apiUrl = 'https://sample-charts-6lev.vercel.app/api/data';
   private refreshInterval = 2000; // 2 seconds
 
 
